@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/styles.css --watch",
+    "start": "dotnet watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css:build": "npx tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/styles.css --minify"
-    
-
+    "css:build": "npx tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/styles.css --minify",
+    "css:watch": "npx tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/styles.css --watch",
+    "dev": "concurrently \" npm run css:watch \" \" npm start \""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "tailwindcss": "^3.4.10"
   }
 }

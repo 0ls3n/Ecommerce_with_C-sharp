@@ -554,10 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -567,7 +563,7 @@ video {
   line-height: 2.5rem;
 }
 
-.text-red-600 {
+.text-blue-800 {
   --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
+  color: rgb(30 64 175 / var(--tw-text-opacity));
 }
