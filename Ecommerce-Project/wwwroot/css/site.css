@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-active{
+    top: 9%;
+    transition: 0.5s;
+}
+
+.nav-inactive {
+    top: -100%;
+    transition: 0.5s;
+}

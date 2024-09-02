@@ -5,7 +5,7 @@
   "scripts": {
     "start": "dotnet watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css:build": "npx tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/styles.css --minify",
+    "css:build": "npx tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/styles.css",
     "css:watch": "npx tailwindcss -i ./wwwroot/css/site.css -o ./wwwroot/css/styles.css --watch",
     "dev": "concurrently \" npm run css:watch \" \" npm start \""
   },
