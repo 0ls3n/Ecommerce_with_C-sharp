@@ -3,11 +3,19 @@
 @tailwind utilities;
 
 .nav-active{
-    top: 9%;
+    top: 7%;
     transition: 0.5s;
 }
 
 .nav-inactive {
     top: -100%;
     transition: 0.5s;
+}
+
+.nav-item {
+    transition: 0.1s;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid black;
 }

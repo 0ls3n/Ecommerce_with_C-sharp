@@ -14,26 +14,27 @@
 <body>
 
     <header class="bg-white border-b-slate-200 border-b-2 shadow-sm">
-        <nav class="flex justify-between items-center mx-auto w-11/12 py-3 max-h-12">
-            <div class="nav-links md:relative absolute bg-white md:min-h-fit min-h-[60vh] nav-inactive left-0 md:w-auto w-full">
+        <nav class="flex justify-between items-center mx-auto w-11/12 py-4 max-h-14 z-20">
+            <div class="nav-links md:relative absolute bg-white md:min-h-fit min-h-[60vh] nav-inactive left-0 md:w-auto w-full z-0">
                 <ul class="flex md:flex-row flex-col items-center gap-7 w-auto">
-                    <li>
-                        <a href="#">Home</a>
+                    <li class="nav-item">
+                        <a href="#">Explore</a>
                     </li>
-                    <li>
-                        <a href="#">Shop</a>
+                    <li class="nav-item">
+                        <a href="#">Mens</a>
                     </li>
-                    <li>
-                        <a href="#">About Us</a>
+                    <li class="nav-item">
+                        <a href="#">Women</a>
                     </li>
-                    <li class="md:hidden">
+                    <li class="md:hidden nav-item">
                         <a href="#">Login</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="relative lg:absolute lg:inset-x-1/2">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="relative lg:absolute lg:left-1/2">
+                <a class="cursor-pointer" href="/">
+                    @*<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M6.77857 6.13915C7.7289 4.78193 9.59953 4.45209 10.9568 5.40242C12.314 6.35275 12.6438 8.22339 11.6935 9.58061L5.95771 17.7721C5.00738 19.1293 3.13674 19.4592 1.77953 18.5089C0.422312 17.5585 0.0924684 15.6879 1.0428 14.3307L6.77857 6.13915Z"
                         fill="currentColor" />
@@ -43,12 +44,20 @@
                     <path
                         d="M20.5 18.8596C22.1569 18.8596 23.5 17.5165 23.5 15.8596C23.5 14.2028 22.1569 12.8596 20.5 12.8596C18.8431 12.8596 17.5 14.2028 17.5 15.8596C17.5 17.5165 18.8431 18.8596 20.5 18.8596Z"
                         fill="currentColor" />
-                </svg>
+                    </svg>*@
+
+                    <img src="~/img/EcoWardrobe-logo.png" style="width: 40px; height: 40px;"/>
+
+                </a>
             </div>
 
             <div class="">
-                <div class="flex w-fit items-center">
-                    <button class="px-5 hover:text-slate-500 hidden md:block">Login</button>
+                <div class="flex w-fit items-center gap-x-5">
+                    <button class="hidden md:block nav-item">Login</button>
+                    <div class="flex items-center gap-x-2">
+                        <ion-icon name="cart-outline" class="text-2xl cursor-pointer"></ion-icon>
+                        
+                    </div>
                     <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3xl cursor-pointer md:hidden"></ion-icon>
                 </div>
 
