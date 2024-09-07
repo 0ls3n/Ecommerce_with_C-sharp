@@ -8,14 +8,16 @@
 
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
 
+
+
     
 </head>
 
 <body>
 
     <header class="bg-white border-b-slate-200 border-b-2 shadow-sm">
-        <nav class="flex justify-between items-center mx-auto w-11/12 py-4 max-h-14 z-20">
-            <div class="nav-links md:relative absolute bg-white md:min-h-fit min-h-[60vh] nav-inactive left-0 md:w-auto w-full z-0">
+        <nav class="flex justify-between items-center mx-auto w-11/12 py-4 max-h-14 z-30">
+            <div class="nav-links md:relative absolute bg-white md:min-h-fit min-h-[60vh] nav-inactive left-0 md:w-auto w-full z-30">
                 <ul class="flex md:flex-row flex-col items-center gap-7 w-auto">
                     <li class="nav-item">
                         <a href="#">Explore</a>
@@ -27,12 +29,12 @@
                         <a href="#">Women</a>
                     </li>
                     <li class="md:hidden nav-item">
-                        <a href="/Identity/Account/Login">Login</a>
+                        <a href="/Identity/Account/Login">Sign in</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="relative lg:absolute lg:left-1/2">
+            <div class="relative lg:absolute lg:left-[49%] z-40">
                 <a class="cursor-pointer" href="/">
                     @*<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -53,12 +55,12 @@
 
             <div class="">
                 <div class="flex w-fit items-center gap-x-5">
-                    <a href="/Identity/Account/Login" class="hidden md:block nav-item">Login</a>
+                    <a href="/Identity/Account/Login" class="hidden md:block nav-item">Sign in</a>
                     <div class="flex items-center gap-x-2">
-                        <ion-icon name="cart-outline" class="text-2xl cursor-pointer"></ion-icon>
+                        <ion-icon name="cart-outline" class="text-2xl cursor-pointer z-40"></ion-icon>
                         
                     </div>
-                    <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu-outline" class="text-3xl cursor-pointer md:hidden z-40"></ion-icon>
                 </div>
 
             </div>
