@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>130</y>
+      <w>170</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>User
+--
+firstname : string
+lastname : string
+password : string
+email : string
+adress : string
+phone : string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1050</x>
+      <y>500</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Product
+--
+name : string
+description : string 
+price : double
+brand : string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1050</x>
+      <y>290</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>/Model/
+--
+Id : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1120</x>
+      <y>360</y>
+      <w>30</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>200</y>
+      <w>240</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+IRepository&lt;T&gt;
+--
+- _repository : T[0..*]
+--
++ Add(entity : T)
++ Update(entity : T)
++ Delete(entity : T)
++ DeleteAll()
++ GetById(id : int) : T
++ GetAll() : T[0..*]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>490</y>
+      <w>240</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Repository&lt;T&gt;
+--
+- _repository : T[0..*]
+--
++ Add(entity : T)
++ Update(entity : T)
++ Delete(entity : T)
++ DeleteAll()
++ GetById(id : int) : T
++ GetAll() : T[0..*]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>370</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+</diagram>
