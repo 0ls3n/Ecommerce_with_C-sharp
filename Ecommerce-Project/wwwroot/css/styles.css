@@ -622,9 +622,9 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.my-\[1px\] {
-  margin-top: 1px;
-  margin-bottom: 1px;
+.my-\[1\.5px\] {
+  margin-top: 1.5px;
+  margin-bottom: 1.5px;
 }
 
 .mb-2 {

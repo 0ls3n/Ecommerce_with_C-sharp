@@ -1,0 +1,21 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace Ecommerce_Project.Models.Domain_Classes 
+{
+    public class Accessory : Product
+    {
+        public string? Material { get; set; }
+
+        [Required]
+        public string Type { get; set; }
+
+        [Required]
+        public Gender Gender { get; set; }
+        public Accessory(string name, string description, decimal price, string brand, ProductCategory category, DateTime createdAt, int id, string material, string type, Gender gender) : base(name, description, price, brand, category, createdAt, id)
+        {
+            Material = material;
+            Type = type;
+            Gender = gender;
+        }
+    }
+}

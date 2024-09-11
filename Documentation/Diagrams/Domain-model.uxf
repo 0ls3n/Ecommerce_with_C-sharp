@@ -4,122 +4,130 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>900</x>
-      <y>330</y>
+      <x>750</x>
+      <y>430</y>
       <w>190</w>
       <h>100</h>
     </coordinates>
-    <panel_attributes>Product
+    <panel_attributes>Produkt
 --
-name
-description
-price
-brand
+navn
+beskrivelse
+pris
+mærke
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>260</x>
-      <y>310</y>
+      <x>760</x>
+      <y>110</y>
       <w>160</w>
       <h>130</h>
     </coordinates>
-    <panel_attributes>Customer
+    <panel_attributes>Kunde
 --
 mail
-adress
-firstname
-lastname
+adresse
+fornavn
+efternavn
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>580</x>
-      <y>310</y>
-      <w>170</w>
-      <h>130</h>
-    </coordinates>
-    <panel_attributes>Cart (Repository??)
---
-products</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>410</x>
-      <y>370</y>
-      <w>190</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=-
-m1=1
-m2=1</panel_attributes>
-    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>740</x>
-      <y>370</y>
-      <w>180</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=-
-m1=1
-m2=*</panel_attributes>
-    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>940</x>
-      <y>510</y>
+      <x>600</x>
+      <y>700</y>
       <w>130</w>
-      <h>60</h>
+      <h>100</h>
     </coordinates>
-    <panel_attributes>Cloth
+    <panel_attributes>Tøj
 --
-size</panel_attributes>
+størrelse
+farve
+materiale
+køn
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1000</x>
-      <y>420</y>
-      <w>30</w>
-      <h>110</h>
+      <x>660</x>
+      <y>470</y>
+      <w>110</w>
+      <h>250</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0;10.0;230.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1190</x>
-      <y>350</y>
+      <x>960</x>
+      <y>700</y>
       <w>120</w>
-      <h>60</h>
+      <h>70</h>
     </coordinates>
-    <panel_attributes>Accesories
+    <panel_attributes>Tilbehør
 --
-</panel_attributes>
+materiale
+type</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1080</x>
-      <y>380</y>
-      <w>130</w>
-      <h>30</h>
+      <x>930</x>
+      <y>470</y>
+      <w>110</w>
+      <h>250</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0;90.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>780</x>
+      <y>700</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Fodtøj
+--
+størrelse
+farve
+materiale
+vandtæt
+køn</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>520</y>
+      <w>30</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>230</y>
+      <w>80</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+køber &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
   </element>
 </diagram>
