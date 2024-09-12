@@ -11,7 +11,7 @@ namespace Ecommerce_Project.Models.Domain_Classes
 
         [Required]
         public Gender Gender { get; set; }
-        public Accessory(string name, string description, decimal price, string brand, ProductCategory category, DateTime createdAt, int id, string material, string type, Gender gender) : base(name, description, price, brand, category, createdAt, id)
+        public Accessory(string name, string description, decimal price, string brand, ProductCategory category, DateTime createdAt, string material, string type, Gender gender) : base(name, description, price, brand, category, createdAt)
         {
             Material = material;
             Type = type;

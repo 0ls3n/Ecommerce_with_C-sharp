@@ -13,7 +13,7 @@ namespace Ecommerce_Project.Models.Domain_Classes
         [Required]
         public Gender Gender { get; set; }
 
-        public Footwear(string name, string description, decimal price, string brand, ProductCategory category, DateTime createdAt, int id, string size, string color, string material, bool isWaterproof, Gender gender) : base(name, description, price, brand, category, createdAt, id)
+        public Footwear(string name, string description, decimal price, string brand, ProductCategory category, DateTime createdAt, string size, string color, string material, bool isWaterproof, Gender gender) : base(name, description, price, brand, category, createdAt)
         {
             Size = size;
             Color = color;

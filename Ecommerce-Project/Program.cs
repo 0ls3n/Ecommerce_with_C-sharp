@@ -17,7 +17,7 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
-builder.Services.AddSingleton<IRepository<Product>, Repository<Product>>(); // Added the Repository as a service
+builder.Services.AddScoped<IRepository<Product>, Repository<Product>>(); // Added the Repository as a service
 
 var app = builder.Build();
 

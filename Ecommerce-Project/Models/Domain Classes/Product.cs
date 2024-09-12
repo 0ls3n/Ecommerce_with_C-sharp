@@ -17,7 +17,7 @@ namespace Ecommerce_Project.Models.Domain_Classes
         public ProductCategory Category { get; set; }
         public DateTime CreatedAt { get; set; }
 
-        public Product(string name, string description, decimal price, string brand, ProductCategory category, DateTime createdAt, int id)
+        public Product(string name, string description, decimal price, string brand, ProductCategory category, DateTime createdAt)
         {
             Name = name;
             Description = description;
@@ -25,7 +25,6 @@ namespace Ecommerce_Project.Models.Domain_Classes
             Brand = brand;
             Category = category;
             CreatedAt = createdAt;
-            Id = id;
         }
     }
 }
