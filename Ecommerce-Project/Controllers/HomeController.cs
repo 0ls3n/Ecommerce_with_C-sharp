@@ -11,13 +11,17 @@ public class HomeController : Controller
 
     private readonly IRepository<Product> _productRepo;
 
+    private List<Product> products = new List<Product>();
+
     public HomeController(IRepository<Product> productRepo)
     {
         _productRepo = productRepo;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
+        products = await _productRepo.GetAllAsync();
+
         return View();
     }
 

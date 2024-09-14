@@ -47,16 +47,10 @@ namespace Ecommerce_Project.Models.Persistence
             }
         }
 
-        public async Task<List<T>> GetAllAsync()
-        {
-            return await _dbSet.ToListAsync();
-        }
+        public async Task<List<T>> GetAllAsync() => await _dbSet.ToListAsync();
 
-        public async Task<T> GetByIdAsync(int? id)
-        {
-            //return _repository.Find(x => x.Id == id);
-            return await _dbSet.FindAsync(id);
-        }
+        public async Task<T> GetByIdAsync(int? id) => await _dbSet.FindAsync(id);
+        
 
         public async Task UpdateAsync(T entity)
         {
