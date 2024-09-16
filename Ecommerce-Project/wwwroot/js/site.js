@@ -11,3 +11,8 @@ function onToggleMenu(e) {
         navLinks.classList.replace('nav-active', 'nav-inactive');
     }
 }
+
+document.getElementById("productButton").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the anchor from jumping to the top
+    // Your custom code here
+});

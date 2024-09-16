@@ -5,5 +5,40 @@
 @model List<Product>;
 
 <div>
-    <p>@Model.Count</p>
+    <section class="max-w-[1524px] mx-auto p-0 m-0">
+        <div class="flex items-end gap-5 mt-5">
+            <h1 class="text-3xl md:text-6xl">Products</h1>
+            <p class="text-xl md:text-3xl text-slate-300 font-bold">@Model.Count</p>
+        </div>
+        <div class="w-full h-[0.5px] mt-10 bg-slate-100"></div>
+        <div class="grid grid-cols-1 md:grid-cols-4 mt-5 gap-10">
+            <div class="hidden md:block">
+
+            </div>
+            <div class="grid grid-rows-1 col-span-3 gap-5">
+                @foreach (var p in Model)
+                {
+                    <button id="productButton" class="text-left">
+                        <div class="group h-40 bg-slate-100 rounded-lg flex">
+                            <div class="w-fit overflow-hidden h-80">
+                                <img src="@p.ImagePath" alt="Front of mens Basic Tee in black."
+                                    class="w-fit h-1/2 object-cover object-center transition-transform duration-500 ease-in-out">
+                            </div>
+                            <div class="mt-4 mx-10 md:flex gap-5 justify-between w-full">
+                                <div>
+                                    <h3 class="text-md lg:text-xl text-gray-700">
+                                        <p class="group-hover:text-green-600">
+                                            @p.Name
+                                        </p>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">@p.Brand</p>
+                                </div>
+                                <p class="text-md font-medium text-gray-900">@p.Price $</p>
+                            </div>
+                        </div>
+                    </button>
+                }
+            </div>
+        </div>
+    </section>
 </div>
